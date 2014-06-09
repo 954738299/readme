@@ -5,9 +5,9 @@
 ###分享前的准备
 
 1. 引用 UsrClearSDK 库
-	* 将 source/UsrClearSDK 导入eclipse
-	* 鼠标右键点击你的工程(或者UsrClearDemo工程)，选择 **Properties**
-	* 进入 **Properties** 界面后，如下图操作：
+	1. 将 source/UsrClearSDK 导入eclipse
+	2. 鼠标右键点击你的工程(或者UsrClearDemo工程)，选择 **Properties**
+	3. 进入 **Properties** 界面后，如下图操作：
 	
 		![UserClear](images/properties.png)
 
