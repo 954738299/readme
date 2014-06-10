@@ -103,25 +103,25 @@
 	* 无界面分享
 
 	```java
-		api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_NO_DIALOG); //无界面分享至新浪微博
+	api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_NO_DIALOG); //无界面分享至新浪微博
 	```
 	
 	* 调用UsrClear分享界面进行分享
 
 	```java
-		api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_DIALOG); //跳转UsrClear界面分享至新浪微博
+	api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_DIALOG); //跳转UsrClear界面分享至新浪微博
 	```
 	
 	需要在AndroidManifest.xml文件内注册UsrClearActivity：
 		
 	```xml
-		<activity
-	        android:name="com.blhk.usrclear.activity.UsrClearActivity"
-	        android:theme="@android:style/Theme.Translucent" >
-	        <intent-filter>
-	            <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
-	        </intent-filter>
-	    </activity>
+	<activity
+	    android:name="com.blhk.usrclear.activity.UsrClearActivity"
+	    android:theme="@android:style/Theme.Translucent" >
+	    <intent-filter>
+	        <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+	    </intent-filter>
+	</activity>
 	```
 
 ---
