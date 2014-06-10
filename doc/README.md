@@ -92,10 +92,10 @@
 * 需要重写 Activity 中的 onActivityResult 方法,并在 onActivityResult 方法中调用UserClearAPI的onResult方法,例如：
 
 	```java
-		@Override
-		protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-			api.onResult(requestCode, resultCode, data);
-		}
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		api.onResult(requestCode, resultCode, data);
+	}
 	```
 
 * 调用 UsrClearAPI 的 share 方法分享（以下步骤可二选一）：
