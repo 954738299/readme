@@ -6,8 +6,8 @@
 
 1. 引用 UsrClearSDK 库
 	1. 将 source/UsrClearSDK 导入eclipse
-	2. 鼠标右键点击你的工程(或者UsrClearDemo工程)，选择 **_Properties_** 选项
-	3. 进入 **_Properties_** 界面后，如下图操作：
+	2. 鼠标右键点击你的工程(或者UsrClearDemo工程)，选择 **Properties** 选项
+	3. 进入 **Properties** 界面后，如下图操作：
 	
 		![UserClear](images/properties.png)
 
@@ -89,32 +89,32 @@
 
 ###新浪微博分享
 
-* 调用 UsrClearAPI 的 share 方法分享（以下步骤可二选一）：
+* 需要重写 Activity 中的 onActivityResult 方法,并在 onActivityResult 方法中调用UserClearAPI的onResult方法,例如：
 
-	* 无界面分享
-
-		```java
-		api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_NO_DIALOG); //无界面分享至新浪微博
-		```
-	
-		需要重写 Activity 中的 onActivityResult 方法,并在 onActivityResult 方法中调用UserClearAPI的onResult方法,例如：
-	
-	  	```java
+	```java
 		@Override
 		protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 			api.onResult(requestCode, resultCode, data);
 		}
-		```
+	```
 
+* 调用 UsrClearAPI 的 share 方法分享（以下步骤可二选一）：
+
+	* 无界面分享
+
+	```java
+		api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_NO_DIALOG); //无界面分享至新浪微博
+	```
+	
 	* 调用UsrClear分享界面进行分享
 
-		```java
+	```java
 		api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_DIALOG); //跳转UsrClear界面分享至新浪微博
-		```
+	```
 	
-		需要在AndroidManifest.xml文件内注册UsrClearActivity：
+	需要在AndroidManifest.xml文件内注册UsrClearActivity：
 		
-		```xml
+	```xml
 		<activity
 	        android:name="com.blhk.usrclear.activity.UsrClearActivity"
 	        android:theme="@android:style/Theme.Translucent" >
@@ -122,7 +122,7 @@
 	            <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
 	        </intent-filter>
 	    </activity>
-		```
+	```
 
 ---
 
