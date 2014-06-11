@@ -26,7 +26,7 @@
 	</UsrClear>
 	```
 
-	1. `UsrClearSDK`节点下的`AppKey`需要在 [UsrClearSDK官网](http://mta.lbadvisor.com/) 注册用户，并成功创建应用后可以获得;`ServerUrl`可以使用`mta.lbadvisor.com`
+	1. `UsrClearSDK`节点下的`AppKey`需要在 [UsrClearSDK官网](http://mta.lbadvisor.com/) 注册用户，并成功创建应用后可以获得;`ServerUrl`可以使用`http://mta.lbadvisor.com`
 
 	2. `SinaWeibo`节点下的`AppKey`需要在 [新浪微博开放平台](http://open.weibo.com/) 注册用户，并成功创建应用后可以获得;`RedirectUrl`需要在创建好的应用中选择 **应用信息** > **高级信息** 中设置授权回调页
 
@@ -126,4 +126,4 @@
 
 ---
 
-**注意：UsrClearSDK 以及 UsrClearDemo 的编码格式为 UTF-8**
+**注意：UsrClearSDK 以及 UsrClearSDKDemo 的编码格式为 UTF-8**
