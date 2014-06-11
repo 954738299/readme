@@ -102,9 +102,9 @@
 
 	* 无界面分享
 
-	```java
-	api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_NO_DIALOG); //无界面分享至新浪微博
-	```
+		```java
+		api.share(params, shareListener, UsrClearAPI.Platform.SHARE_SINA_WEIBO_NO_DIALOG); //无界面分享至新浪微博
+		```
 	
 	* 调用UsrClear分享界面进行分享
 
